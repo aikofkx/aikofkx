@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body{
+    width: 100%;
+    height: 200vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+.about-me-section img {
+    width: 40%;
+    height: auto;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+.pic1 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic1:hover {
+    filter: grayscale(0%) opacity(1);
+    transform: scale(1.05);
+}
+
+.pic2 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic2:hover {
+    filter: grayscale(0%) opacity(1); 
+    transform: scale(1.05);
+}
+
+.pic3 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.pic3:hover {
+    filter: grayscale(0%) opacity(1); 
+    transform: scale(1.05);
+}
+
+.pic4 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic4:hover {
+    filter: grayscale(0%) opacity(1); 
+    transform: scale(1.05);
+}
+
+.pic5 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic5:hover {
+    filter: grayscale(0%) opacity(1); 
+    transform: scale(1.05);
+}
+
+.pic6 {
+    filter: grayscale(100%) opacity(0.7); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic6:hover {
+    filter: grayscale(0%) opacity(1); 
+    transform: scale(1.05);
+}
+
+header{
+    margin-top: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .2rem 3%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        color: white
+    }
+}
+
+.typing-text {
+    background-color: transparent;
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: "";
+    color: white;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: blue;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid white;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "#90 MCLEOD";
+    }
+    21%, 40%{
+        content: "#88 ZHAFYAROV";
+    }
+    41%, 60%{
+        content: "#19 ELISSON";
+    }
+    61%, 80%{
+        content: "#9 SMITH";
+    }
+    81%, 100%{
+        content: "#82 BUTCHER";
+    }
+}
+
+
+.navbar-name{
+    font-family: Poppins;
+    font-size: 3rem;
+    color: white;
+    span {
+        color: blue;
+    }
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.navbar-name:hover{
+    transform: scale(1.1);
+}
+
+h1 {
+    font-size: 5rem;
+    padding: 4rem 4rem 0 ;
+}
+
+.navbar-socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid blue;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 2rem 1rem 2rem 0;    
+    transition: 0.3s ease;
+    color: blue;
+}
+
+.about-me-section {
+    background-color: blue;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    .about-me-paragraph {
+        font-size: 2em;
+    }
+    .about-me-title {
+        font-size: 4em;
+    }
+    .about-me-content {
+        margin: 0 30px 0 0;
+    }
+}
+
+.navbar-socials a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: blue;
+    box-shadow: 0  0 25px blue;
+}
+
+.btn{
+    margin: 1rem 3.9rem ;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: blue;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid blue;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: blue;
+    color: black;
+    box-shadow: 0 0 25px blue;
+}
+
+.current {
+    margin: 1rem 3.9rem ;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid blue;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transform: scale3d(1.03);
+    background-color: blue;
+    color: black;
+    box-shadow: 0 0 25px blue;
+}
